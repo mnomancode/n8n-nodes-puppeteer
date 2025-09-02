@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  n8n-puppeteer:
+    image: n8n-puppeteer
+    ports:
+      - "5678:5678"
+    environment:
+      - WEBHOOK_URL=https://noman.n8nu.com/
+    volumes:
+      - "$HOME/n8n-data:/home/node/.n8n"
