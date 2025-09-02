@@ -1,3 +1,13 @@
+# Run with Docker
+
+To start the n8n-puppeteer container with persistent data, use:
+
+```sh
+docker run -it \
+  -p 5678:5678 \
+  -v $HOME/n8n-data:/home/node/.n8n \
+  n8n-puppeteer
+```
 # n8n-nodes-puppeteer
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
